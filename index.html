@@ -45,8 +45,13 @@
             display: flex;
         }
 
-        header span:hover {
+        header span:hover,
+        footer p:last-of-type:hover {
             cursor: pointer;
+        }
+
+        main {
+            text-align: center;
         }
 
         footer {
@@ -55,8 +60,8 @@
             bottom: 40px;
         }
 
-        footer p:last-of-type:hover {
-            cursor: pointer;
+        footer p:last-of-type a {
+            color: #212121;
         }
     </style>
 </head>
@@ -65,10 +70,13 @@
     <header>Dear <span class="shake-little shake-constant shake-constant--hover"> Baozi</span>:</header>
     <main>
         <img class="shake shake-chunk shake-constant shake-constant--hover" src="https://imgs.sanbaofengs.com/baozi.svg" alt="baozi">
+        <p>On the way...</p>
     </main>
     <footer>
         <p>Ta-Ta</p>
-        <p class="shake-little shake-constant shake-constant--hover">Baozi Pa</p>
+        <p class="shake-little shake-constant shake-constant--hover">
+            <a href="https://github.com/x-bao/baozipa">Baozi Pa</a>
+        </p>
     </footer>
 </body>
 
